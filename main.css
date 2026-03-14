@@ -704,33 +704,31 @@ pre>code {
 /* 背景：把人物推到更右侧，避免被前景卡片挡住 */
 .shallow-bg,
 .deep-bg {
-    background-image: url("images/images/beauty2.png");
-    background-size: cover;           /* 全屏覆盖 */
+    background-image: url("images/cover-bg.jpg");
+    background-size: cover;
     background-repeat: no-repeat;
-    background-position: 88% 17%;     /* 水平更靠右，垂直保持你喜欢的 25% */
-    image-rendering: auto;            /* 保持原清晰度 */
+    background-position: center center;
+    image-rendering: auto;
 }
 
-/* 中屏时适当回一点，避免人物出框 */
 @media (max-width: 1200px) {
   .shallow-bg,
   .deep-bg {
-    background-position: 82% 25%;
+    background-position: center center;
   }
 }
 
-/* 窄屏：人物更易被底部裁切，略微上移纵向 */
 @media (max-width: 800px) {
   .shallow-bg,
   .deep-bg {
-    background-position: 78% 28%;
+    background-position: center center;
   }
 }
 
 @media (max-width: 600px) {
   .shallow-bg,
   .deep-bg {
-    background-position: 75% 24%;
+    background-position: center center;
   }
 }
 
