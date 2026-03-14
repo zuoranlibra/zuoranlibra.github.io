@@ -707,28 +707,28 @@ pre>code {
     background-image: url("images/cover-bg.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center 35%;
     image-rendering: auto;
 }
 
 @media (max-width: 1200px) {
   .shallow-bg,
   .deep-bg {
-    background-position: center center;
+    background-position: center 35%;
   }
 }
 
 @media (max-width: 800px) {
   .shallow-bg,
   .deep-bg {
-    background-position: center center;
+    background-position: center 35%;
   }
 }
 
 @media (max-width: 600px) {
   .shallow-bg,
   .deep-bg {
-    background-position: center center;
+    background-position: center 35%;
   }
 }
 
