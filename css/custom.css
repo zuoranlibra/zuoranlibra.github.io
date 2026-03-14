@@ -1,0 +1,191 @@
+/* Custom overrides for Jinyuan Chen's homepage */
+
+/* Widen profile card so name & university stay on one line */
+#profile-namecard.profile-wrapper {
+  width: 700px;
+  position: relative;
+  z-index: 5;
+}
+
+#my-name,
+#my-title {
+  white-space: nowrap;
+}
+
+/* Shorter profile card: reduce padding */
+#profile-namecard .profile-col {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+/* No profile image — center the contact info */
+#profile-namecard {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Social media centered under name/school, ensure clickable */
+.social-media {
+  text-align: center;
+  margin-top: 8px;
+  position: relative;
+  z-index: 10;
+}
+.social-media .icon-button {
+  position: relative;
+  z-index: 11;
+  pointer-events: auto;
+}
+
+/* Shorter cover section */
+.cover {
+  height: 220px;
+}
+@media screen and (max-width: 600px) {
+  .cover {
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #profile-namecard.profile-wrapper {
+    width: calc(90% - 30px);
+  }
+  #my-name,
+  #my-title {
+    white-space: normal;
+  }
+}
+
+/* Education icons: consistent sizing, CUHK thicker/bolder */
+.edu-icon {
+  width: 100%;
+  max-width: 100px;
+  height: auto;
+  object-fit: contain;
+}
+.edu-icon-cuhk {
+  filter: contrast(1) drop-shadow(0 0 0.5px rgba(0,0,0,0.4));
+  min-width: 80px;
+}
+
+/* Education table alignment */
+table .edu-icon {
+  display: block;
+  margin: 0 auto;
+}
+
+/* GPA badge */
+.gpa-badge {
+  display: inline-block;
+  padding: 6px 12px;
+  font-weight: bold;
+  font-size: 0.9em;
+  border-radius: 6px;
+  color: #0d9488;
+  background-color: #f0f0f0;
+}
+
+/* Resume button - compact icon style */
+.resume-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 10px;
+  background-color: #f0f0f0;
+  color: #555;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 0.9em;
+  text-decoration: none;
+  transition: background-color 0.2s, color 0.2s;
+}
+.resume-btn i {
+  font-size: 0.95em;
+}
+.resume-btn:hover {
+  background-color: #e5e5e5;
+  color: #333;
+  text-decoration: none;
+}
+
+/* Opportunity seeking statement */
+.seek-statement {
+  font-size: 1.1em;
+  color: #0d9488;
+  background-color: #f0fdfa;
+  padding: 10px 14px;
+  border-radius: 6px;
+  border-left: 3px solid #0d9488;
+  margin-top: 16px;
+}
+
+/* Awards: confined scrollable window */
+.awards-container {
+  max-height: 280px;
+  overflow-y: auto;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 15px;
+  background-color: #fff;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.03);
+}
+.awards-container::-webkit-scrollbar {
+  width: 6px;
+}
+.awards-container::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+.awards-container::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 4px;
+}
+.awards-container::-webkit-scrollbar-thumb:hover {
+  background: #aaa;
+}
+
+/* Space between sections */
+#awards.awards {
+  margin-top: 35px;
+}
+
+/* Working papers placeholder */
+.papers-placeholder {
+  padding: 30px;
+  text-align: center;
+  color: #999;
+  background: #fafafa;
+  border: 2px dashed #ddd;
+  border-radius: 8px;
+  font-style: italic;
+}
+
+/* Footer: layout */
+.footer-col-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.footer-col-1 { flex: 1 1 auto; }
+.footer-col-3 { flex: 0 1 auto; }
+
+/* Skills badges */
+.skill-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 8px;
+}
+.skill-badge {
+  display: inline-block;
+  padding: 5px 12px;
+  font-size: 0.85em;
+  font-weight: 500;
+  border-radius: 6px;
+  background-color: #f0fdfa;
+  color: #0d9488;
+  border: 1px solid #ccfbf1;
+}
